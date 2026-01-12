@@ -10,15 +10,15 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass">
       <div className="max-w-[1400px] mx-auto px-6">
-        <nav className="flex items-center justify-between h-20">
+        <nav className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
               src="/images/logo.png"
               alt="Kodda.ai"
-              width={110}
-              height={28}
-              className="h-7 w-auto"
+              width={280}
+              height={70}
+              className="h-[70px] w-auto"
               priority
             />
           </Link>

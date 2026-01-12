@@ -1,5 +1,4 @@
 import Link from "next/link";
-import LogoCarousel from "@/components/LogoCarousel";
 
 export default function Hero() {
   return (
@@ -36,9 +35,6 @@ export default function Hero() {
           </Link>
         </div>
       </div>
-
-      {/* Logo carousel */}
-      <LogoCarousel />
     </section>
   );
 }

@@ -11,9 +11,9 @@ export default function Footer() {
             <Image
               src="/images/logo.png"
               alt="Kodda.ai"
-              width={100}
-              height={26}
-              className="h-6 w-auto mb-6"
+              width={160}
+              height={42}
+              className="h-12 w-auto mb-6"
             />
             <p className="text-zinc-500 max-w-md leading-relaxed">
               Agentes de IA autônomos que trabalham 24/7 para transformar suas
