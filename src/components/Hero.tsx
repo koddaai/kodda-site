@@ -20,7 +20,7 @@ export default function Hero() {
           <source src="/images/hero-video.mp4" type="video/mp4" />
         </video>
         {/* Light overlay */}
-        <div className="absolute inset-0 bg-white/60" />
+        <div className="absolute inset-0 bg-white/30" />
       </div>
 
       <div className="container-main py-16 md:py-24 relative z-10">
