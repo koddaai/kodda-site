@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface AgentCardProps {
   name: string;
@@ -6,7 +9,6 @@ interface AgentCardProps {
   description: string;
   href: string;
   videoUrl: string;
-  accentColor: string;
   reversed?: boolean;
 }
 
@@ -16,85 +18,53 @@ export default function AgentCard({
   description,
   href,
   videoUrl,
-  accentColor,
   reversed = false,
 }: AgentCardProps) {
+  const { t } = useLanguage();
+
   return (
     <div
-      className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center ${
-        reversed ? "lg:[direction:rtl]" : ""
-      }`}
+      className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center`}
     >
       {/* Content */}
-      <div className={reversed ? "lg:[direction:ltr]" : ""}>
-        {/* Status badge */}
-        <div className="inline-flex items-center gap-2 mb-6">
-          <span className="status-dot" style={{ background: accentColor }} />
-          <span className="text-sm text-zinc-500 uppercase tracking-wider font-medium">
-            Online
-          </span>
-        </div>
-
+      <div className={`text-center lg:text-left ${reversed ? "lg:order-2" : "lg:order-1"}`}>
         {/* Name */}
-        <h2 className="text-5xl md:text-6xl font-bold mb-3">{name}</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-black">{name}</h2>
 
         {/* Role */}
-        <p className="text-xl md:text-2xl mb-6" style={{ color: accentColor }}>
+        <p className="text-sm text-black/50 mb-3">
           {role}
         </p>
 
         {/* Description */}
-        <p className="text-lg text-zinc-400 leading-relaxed mb-8 max-w-lg">
+        <p className="text-sm md:text-base text-black/70 leading-relaxed mb-5 text-pretty">
           {description}
         </p>
 
         {/* CTA */}
         <Link
           href={href}
-          className="inline-flex items-center gap-3 text-white px-8 py-4 rounded-full font-medium text-lg transition-all duration-300 hover:scale-105 hover:gap-4"
-          style={{ backgroundColor: accentColor }}
+          className="link-arrow inline-flex justify-center lg:justify-start"
         >
-          Contratar {name}
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          {t("agents.hire")} {name}
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
           </svg>
         </Link>
       </div>
 
       {/* Video */}
-      <div className={`${reversed ? "lg:[direction:ltr]" : ""} relative`}>
-        <div
-          className="absolute inset-0 rounded-3xl blur-3xl opacity-30 -z-10"
-          style={{ background: accentColor }}
-        />
-        <div className="video-container aspect-[4/3] rounded-3xl border border-white/10 overflow-hidden">
+      <div className={`${reversed ? "lg:order-1" : "lg:order-2"}`}>
+        <div className="video-container aspect-[4/3] rounded-xl border border-black/5 overflow-hidden bg-[#EBE7E0]">
           <video
             autoPlay
             loop
             muted
             playsInline
             className="w-full h-full object-cover"
-            poster={`/images/${name.toLowerCase()}-poster.jpg`}
           >
             <source src={videoUrl} type="video/mp4" />
           </video>
-
-          {/* Overlay badge */}
-          <div className="absolute top-6 right-6 z-10 flex items-center gap-2 bg-black/60 backdrop-blur-sm rounded-full px-4 py-2">
-            <span
-              className="w-2 h-2 rounded-full animate-pulse"
-              style={{ background: accentColor }}
-            />
-            <span className="text-xs text-white font-medium uppercase tracking-wider">
-              Demo ao vivo
-            </span>
-          </div>
-
-          {/* Agent name overlay */}
-          <div className="absolute bottom-6 left-6 z-10">
-            <div className="text-white text-2xl font-bold">{name}</div>
-            <div className="text-white/60 text-sm">{role}</div>
-          </div>
         </div>
       </div>
     </div>

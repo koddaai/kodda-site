@@ -24,47 +24,38 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="section-padding">
-      <div className="max-w-[1400px] mx-auto px-6">
+    <section id="sobre" className="section-padding bg-[#EBE7E0]">
+      <div className="container-main">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Empresas que <span className="text-gradient">confiam</span>
+        <div className="text-center mb-10 md:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-black">
+            O que nossos clientes dizem
           </h2>
-          <p className="text-xl text-zinc-400">
-            Veja o que nossos clientes dizem.
+          <p className="text-base md:text-lg text-black/50">
+            Empresas que confiam na Kodda.
           </p>
         </div>
 
         {/* Testimonials grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-zinc-900/30 border border-white/5 rounded-2xl p-8 card-hover"
+              className="card"
             >
-              {/* Quote icon */}
-              <svg
-                className="w-10 h-10 text-[#4d65ff]/30 mb-6"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-              </svg>
-
               {/* Quote */}
-              <p className="text-lg text-zinc-300 leading-relaxed mb-8">
+              <p className="text-sm md:text-base text-black/70 leading-relaxed mb-6">
                 &ldquo;{testimonial.quote}&rdquo;
               </p>
 
               {/* Author */}
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-[#4d65ff] to-[#00d4aa] rounded-full flex items-center justify-center text-white font-bold text-lg">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center text-white font-medium text-sm shrink-0">
                   {testimonial.author.charAt(0)}
                 </div>
                 <div>
-                  <div className="font-semibold">{testimonial.author}</div>
-                  <div className="text-sm text-zinc-500">
+                  <div className="font-medium text-sm text-black">{testimonial.author}</div>
+                  <div className="text-xs text-black/50">
                     {testimonial.role}, {testimonial.company}
                   </div>
                 </div>

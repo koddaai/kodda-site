@@ -1,3 +1,7 @@
+"use client";
+
+import { useLanguage } from "@/context/LanguageContext";
+
 const metrics = [
   {
     value: "+85%",
@@ -15,37 +19,35 @@ const metrics = [
     value: "24/7",
     label: "Disponibilidade total",
   },
-  {
-    value: ">R$10M",
-    label: "Receita gerada para clientes",
-  },
 ];
 
 export default function Metrics() {
+  const { t } = useLanguage();
+
   return (
-    <section className="section-padding tropical-glow">
-      <div className="max-w-[1400px] mx-auto px-6">
+    <section className="section-padding bg-white">
+      <div className="container-main">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Resultados que <span className="text-gradient">importam</span>
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-black [text-wrap:balance]">
+            {t("metrics.title")}
           </h2>
-          <p className="text-xl text-zinc-400">
-            Números reais de empresas que usam Kodda.
+          <p className="text-base md:text-lg text-black/50 [text-wrap:balance]">
+            {t("metrics.subtitle")}
           </p>
         </div>
 
         {/* Metrics grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
           {metrics.map((metric, index) => (
             <div
               key={index}
-              className="text-center p-8 rounded-2xl bg-gradient-to-b from-zinc-900/80 to-transparent border border-white/5"
+              className="bg-[#EBE7E0] rounded-xl p-6 md:p-8 text-center h-full flex flex-col justify-center min-h-[140px]"
             >
-              <div className="text-4xl md:text-5xl font-bold text-[#4d65ff] mb-3">
+              <div className="text-3xl md:text-4xl font-bold text-black mb-2">
                 {metric.value}
               </div>
-              <div className="text-sm text-zinc-400">{metric.label}</div>
+              <div className="text-sm text-black/50 leading-tight">{metric.label}</div>
             </div>
           ))}
         </div>
