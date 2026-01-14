@@ -131,10 +131,28 @@ body {
   padding-bottom: clamp(5rem, 10vw, 8rem);
 }
 
+/* Section padding small - for agent pages */
+.section-padding-sm {
+  padding-top: clamp(3rem, 6vw, 5rem);
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+}
+
 /* CTA section - maximum emphasis */
 .section-cta {
   padding-top: clamp(6rem, 12vw, 10rem);
   padding-bottom: clamp(6rem, 12vw, 10rem);
+}
+
+/* Section base styles */
+section {
+  position: relative;
+  width: 100%;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .section-header {

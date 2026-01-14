@@ -95,7 +95,11 @@ export default function AgentPageLayout({
 
               {/* Video */}
               <div className="relative">
-                <div className="video-container aspect-square lg:aspect-[4/3] rounded-2xl border border-black/5 overflow-hidden bg-[#EBE7E0] shadow-sm">
+                {/* Elemento decorativo de fundo */}
+                <div className="absolute -bottom-4 -right-4 w-full h-full bg-neutral-100 rounded-2xl" />
+
+                {/* Video principal */}
+                <div className="relative z-10 video-container aspect-square lg:aspect-[4/3] rounded-2xl border border-black/5 overflow-hidden bg-[#EBE7E0] shadow-sm">
                   <video
                     autoPlay
                     loop
@@ -125,8 +129,11 @@ export default function AgentPageLayout({
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
               {useCases.map((useCase, index) => (
-                <div key={index} className="card p-5 md:p-6 h-full flex flex-col">
-                  <div className="w-12 h-12 bg-black/5 rounded-xl flex items-center justify-center mb-4 text-black flex-shrink-0">
+                <div
+                  key={index}
+                  className="group card p-5 md:p-6 h-full flex flex-col transition-all duration-300 hover:shadow-lg hover:shadow-neutral-200/40 hover:-translate-y-1"
+                >
+                  <div className="w-12 h-12 bg-neutral-100 rounded-xl flex items-center justify-center mb-4 text-neutral-700 flex-shrink-0 transition-colors duration-300 group-hover:bg-neutral-900 group-hover:text-white">
                     {useCase.icon}
                   </div>
                   <h3 className="text-base font-semibold mb-2 text-black">{useCase.title}</h3>
@@ -213,9 +220,15 @@ export default function AgentPageLayout({
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
               {features.map((feature, index) => (
-                <div key={index} className="bg-[#EBE7E0] rounded-xl p-5 md:p-6 h-full flex flex-col text-center">
-                  <h3 className="text-base font-semibold mb-2 text-black">{feature.title}</h3>
-                  <p className="text-sm text-black/60 leading-relaxed flex-grow">{feature.description}</p>
+                <div
+                  key={index}
+                  className="bg-white border border-neutral-200/60 rounded-xl p-5 md:p-6 h-full flex flex-col transition-all duration-300 hover:shadow-md hover:border-neutral-300"
+                >
+                  <h4 className="font-semibold text-neutral-900 mb-1 flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-neutral-900 flex-shrink-0" />
+                    {feature.title}
+                  </h4>
+                  <p className="text-sm text-neutral-600 leading-relaxed flex-grow pl-3.5">{feature.description}</p>
                 </div>
               ))}
             </div>
