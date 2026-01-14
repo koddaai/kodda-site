@@ -11,13 +11,8 @@ const footerLinks = {
     { label: "Lara", href: "/lara" },
     { label: "Léo", href: "/leo" },
   ],
-  empresa: [
-    { label: "Sobre nós", href: "/sobre" },
-    { label: "Blog", href: "/blog" },
-    { label: "Carreiras", href: "/carreiras" },
-  ],
   legal: [
-    { label: "Privacidade", href: "/privacidade" },
+    { label: "Política de Privacidade", href: "/privacidade" },
     { label: "Termos de Uso", href: "/termos" },
     { label: "LGPD", href: "/lgpd" },
   ],
@@ -34,9 +29,9 @@ export default function Footer() {
     <footer className="bg-white border-t border-neutral-200/60">
       <div className="container-main py-16 md:py-20">
         {/* Grid principal */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
           {/* Logo e descrição */}
-          <div className="col-span-2 lg:col-span-1">
+          <div className="col-span-2 md:col-span-1">
             <Link href="/" className="inline-block mb-6">
               <Image
                 src="/images/logo.png"
@@ -76,23 +71,6 @@ export default function Footer() {
             <h4 className="font-semibold text-neutral-900 mb-4">{t("footer.agents")}</h4>
             <ul className="space-y-3">
               {footerLinks.agentes.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-neutral-600 hover:text-neutral-900 transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Empresa */}
-          <div>
-            <h4 className="font-semibold text-neutral-900 mb-4">Empresa</h4>
-            <ul className="space-y-3">
-              {footerLinks.empresa.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
