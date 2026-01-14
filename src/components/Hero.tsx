@@ -49,7 +49,7 @@ export default function Hero() {
           >
             {t("hero.title1")}
             <br />
-            <span className="text-black/50">{t("hero.title2")}</span>
+            <span className="text-neutral-500">{t("hero.title2")}</span>
           </motion.h1>
 
           {/* Subheadline */}

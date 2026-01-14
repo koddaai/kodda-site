@@ -116,13 +116,25 @@ body {
 
 /* Section spacing - more generous */
 .section-wrapper {
-  padding-top: clamp(5rem, 10vw, 7.5rem);
-  padding-bottom: clamp(5rem, 10vw, 7.5rem);
+  padding-top: clamp(5rem, 10vw, 8rem);
+  padding-bottom: clamp(5rem, 10vw, 8rem);
 }
 
 .section-wrapper-large {
-  padding-top: clamp(6.5rem, 12vw, 10.5rem);
-  padding-bottom: clamp(6.5rem, 12vw, 10.5rem);
+  padding-top: clamp(7rem, 12vw, 11rem);
+  padding-bottom: clamp(7rem, 12vw, 11rem);
+}
+
+/* Section padding for agents and similar */
+.section-padding {
+  padding-top: clamp(5rem, 10vw, 8rem);
+  padding-bottom: clamp(5rem, 10vw, 8rem);
+}
+
+/* CTA section - maximum emphasis */
+.section-cta {
+  padding-top: clamp(6rem, 12vw, 10rem);
+  padding-bottom: clamp(6rem, 12vw, 10rem);
 }
 
 .section-header {
@@ -345,10 +357,11 @@ body {
 /* ===== METRICS ===== */
 .metric-value {
   font-size: clamp(3rem, 6vw, 4.5rem);
-  font-weight: 800;
+  font-weight: 900;
   line-height: 1;
   color: #1C1917;
   font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
 }
 
 .metric-label {

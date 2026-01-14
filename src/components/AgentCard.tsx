@@ -55,16 +55,26 @@ export default function AgentCard({
 
       {/* Video */}
       <div className={`${reversed ? "lg:order-1" : "lg:order-2"}`}>
-        <div className="video-container aspect-[4/3] rounded-xl border border-black/5 overflow-hidden bg-[#EBE7E0]">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover"
-          >
-            <source src={videoUrl} type="video/mp4" />
-          </video>
+        <div className="relative">
+          {/* Elemento decorativo de fundo */}
+          <div
+            className={`absolute w-full h-full bg-neutral-100 rounded-2xl ${
+              reversed ? "-bottom-4 -left-4" : "-bottom-4 -right-4"
+            }`}
+          />
+
+          {/* Video principal */}
+          <div className="relative z-10 video-container aspect-[4/3] rounded-xl border border-black/5 overflow-hidden bg-[#EBE7E0]">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            >
+              <source src={videoUrl} type="video/mp4" />
+            </video>
+          </div>
         </div>
       </div>
     </div>
