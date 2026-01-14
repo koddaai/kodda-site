@@ -130,7 +130,7 @@ export default function Metrics() {
     <section className="section-wrapper bg-white">
       <div className="container-main">
         {/* Header */}
-        <div className="section-header max-w-2xl mx-auto">
+        <div className="w-full flex flex-col items-center text-center mb-16">
           <motion.span
             className="label-tag mb-4 block"
             initial={{ opacity: 0, y: 20 }}
