@@ -2,12 +2,14 @@
 
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   const { t } = useLanguage();
 
   return (
-    <section className="min-h-[85vh] flex flex-col justify-center relative overflow-hidden pt-16 md:pt-20 bg-white">
+    <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <video
@@ -19,37 +21,80 @@ export default function Hero() {
         >
           <source src="/images/hero-video.mp4" type="video/mp4" />
         </video>
-        {/* Light overlay */}
-        <div className="absolute inset-0 bg-white/30" />
+        {/* Gradient overlays for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-white/50" />
       </div>
 
-      <div className="container-main py-16 md:py-24 relative z-10">
-        <div className="max-w-2xl mx-auto text-center md:text-left md:mx-0">
+      {/* Content */}
+      <div className="container-main relative z-10 pt-32 pb-20">
+        <div className="max-w-3xl">
+          {/* Label/Badge */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="inline-flex items-center px-4 py-2 rounded-full bg-black/5 border border-black/10 text-xs font-semibold uppercase tracking-[0.2em] text-black/60 mb-8">
+              Automação Inteligente
+            </span>
+          </motion.div>
+
           {/* Main headline */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-6 text-black [text-wrap:balance]">
+          <motion.h1
+            className="heading-hero text-black mb-6"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+          >
             {t("hero.title1")}
             <br />
-            {t("hero.title2")}
-          </h1>
+            <span className="text-black/50">{t("hero.title2")}</span>
+          </motion.h1>
 
           {/* Subheadline */}
-          <div className="text-base md:text-lg text-black/60 mx-auto md:mx-0">
+          <motion.div
+            className="body-large max-w-xl mb-10"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
             <p className="mb-1">{t("hero.subtitle1")}</p>
-            <p className="whitespace-nowrap">{t("hero.subtitle2")}</p>
-          </div>
+            <p>{t("hero.subtitle2")}</p>
+          </motion.div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start" style={{ marginTop: '1.5rem' }}>
-            <Link href="#agents" className="btn-primary">
+          {/* CTA Button */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <Link
+              href="#agents"
+              className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-black text-white font-semibold transition-all duration-300 hover:bg-black/90 hover:gap-4 hover:shadow-xl hover:shadow-black/20"
+            >
               {t("hero.cta")}
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
+              <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
-          </div>
+          </motion.div>
         </div>
       </div>
 
+      {/* Scroll Indicator */}
+      <motion.div
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 0.6 }}
+      >
+        <div className="w-6 h-10 rounded-full border-2 border-black/20 flex items-start justify-center p-2">
+          <motion.div
+            className="w-1.5 h-1.5 rounded-full bg-black/40"
+            animate={{ y: [0, 12, 0] }}
+            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+          />
+        </div>
+      </motion.div>
     </section>
   );
 }
