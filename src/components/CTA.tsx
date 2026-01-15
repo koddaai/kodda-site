@@ -16,7 +16,7 @@ export default function CTA() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-black [text-wrap:balance]">
             {t("cta.title")}
           </h2>
-          <p className="text-sm md:text-base text-black/50 mb-6 [text-wrap:balance]">
+          <p className="text-sm md:text-base text-black/50 [text-wrap:balance]" style={{ marginBottom: "40px" }}>
             {t("cta.subtitle")}
           </p>
 

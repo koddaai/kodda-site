@@ -246,7 +246,7 @@ export default function AgentPageLayout({
               <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-black [text-wrap:balance]">
                 Coloque {name} para trabalhar hoje
               </h2>
-              <p className="text-sm md:text-base text-black/50 mb-6 [text-wrap:balance]">
+              <p className="text-sm md:text-base text-black/50 [text-wrap:balance]" style={{ marginBottom: "40px" }}>
                 Converse com nosso time e veja {name} em ação. Implementação em até 48 horas.
               </p>
 
