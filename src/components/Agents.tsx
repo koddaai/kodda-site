@@ -43,7 +43,7 @@ export default function Agents() {
           </p>
         </div>
 
-        <div className="space-y-12 md:space-y-16">
+        <div className="space-y-32 md:space-y-24">
           {agents.map((agent, index) => (
             <AgentCard
               key={agent.name}

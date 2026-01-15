@@ -24,10 +24,11 @@ export default function AgentCard({
 
   return (
     <div
-      className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center`}
+      className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-12 items-center`}
+      style={{ paddingBottom: "60px" }}
     >
       {/* Content */}
-      <div className={`text-center lg:text-left ${reversed ? "lg:order-2" : "lg:order-1"}`}>
+      <div className={`text-center lg:text-left ${reversed ? "lg:order-2" : "lg:order-1"}`} style={{ order: -1 }}>
         {/* Name */}
         <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-black">{name}</h2>
 
@@ -54,7 +55,7 @@ export default function AgentCard({
       </div>
 
       {/* Video */}
-      <div className={`${reversed ? "lg:order-1" : "lg:order-2"}`}>
+      <div className={`${reversed ? "lg:order-1" : "lg:order-2"} mb-6 lg:mb-0`} style={{ order: 1 }}>
         <div className="relative">
           {/* Elemento decorativo de fundo */}
           <div
