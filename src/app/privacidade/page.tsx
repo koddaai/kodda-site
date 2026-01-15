@@ -12,8 +12,8 @@ export default function PrivacidadePage() {
       title="Política de Privacidade"
       lastUpdated="Janeiro de 2025"
     >
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           1. Introdução
         </h2>
         <p className="text-neutral-700 mb-4">
@@ -28,8 +28,8 @@ export default function PrivacidadePage() {
         </p>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           2. Dados que Coletamos
         </h2>
         <p className="text-neutral-700 mb-4">
@@ -57,8 +57,8 @@ export default function PrivacidadePage() {
         </ul>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           3. Como Usamos seus Dados
         </h2>
         <p className="text-neutral-700 mb-4">
@@ -75,8 +75,8 @@ export default function PrivacidadePage() {
         </ul>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           4. Compartilhamento de Dados
         </h2>
         <p className="text-neutral-700 mb-4">
@@ -103,8 +103,8 @@ export default function PrivacidadePage() {
         </ul>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           5. Segurança dos Dados
         </h2>
         <p className="text-neutral-700 mb-4">
@@ -120,8 +120,8 @@ export default function PrivacidadePage() {
         </ul>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           6. Retenção de Dados
         </h2>
         <p className="text-neutral-700">
@@ -133,8 +133,8 @@ export default function PrivacidadePage() {
         </p>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           7. Seus Direitos
         </h2>
         <p className="text-neutral-700 mb-4">
@@ -151,8 +151,8 @@ export default function PrivacidadePage() {
         </ul>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">8. Cookies</h2>
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">8. Cookies</h2>
         <p className="text-neutral-700 mb-4">
           Utilizamos cookies e tecnologias similares para melhorar sua
           experiência. Os tipos de cookies que usamos incluem:
@@ -177,8 +177,8 @@ export default function PrivacidadePage() {
         </p>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           9. Alterações nesta Política
         </h2>
         <p className="text-neutral-700">
@@ -190,7 +190,7 @@ export default function PrivacidadePage() {
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">10. Contato</h2>
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">10. Contato</h2>
         <p className="text-neutral-700 mb-4">
           Para exercer seus direitos ou esclarecer dúvidas sobre esta política,
           entre em contato:

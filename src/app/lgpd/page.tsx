@@ -12,8 +12,8 @@ export default function LGPDPage() {
       title="LGPD - Lei Geral de Proteção de Dados"
       lastUpdated="Janeiro de 2025"
     >
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           Compromisso com a Proteção de Dados
         </h2>
         <p className="text-neutral-700 mb-4">
@@ -28,8 +28,8 @@ export default function LGPDPage() {
         </p>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           Dados Pessoais e Finalidades
         </h2>
 
@@ -107,8 +107,8 @@ export default function LGPDPage() {
         </div>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           Seus Direitos como Titular
         </h2>
         <p className="text-neutral-700 mb-4">
@@ -171,8 +171,8 @@ export default function LGPDPage() {
         </div>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           Como Exercer seus Direitos
         </h2>
         <p className="text-neutral-700 mb-4">
@@ -193,8 +193,8 @@ export default function LGPDPage() {
         </p>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           Medidas de Segurança
         </h2>
         <p className="text-neutral-700 mb-4">
@@ -212,8 +212,8 @@ export default function LGPDPage() {
         </ul>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           Compartilhamento de Dados
         </h2>
         <p className="text-neutral-700 mb-4">
@@ -239,8 +239,8 @@ export default function LGPDPage() {
         </p>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           Transferência Internacional
         </h2>
         <p className="text-neutral-700">
@@ -251,8 +251,8 @@ export default function LGPDPage() {
         </p>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           Incidentes de Segurança
         </h2>
         <p className="text-neutral-700">
@@ -264,7 +264,7 @@ export default function LGPDPage() {
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           Encarregado de Proteção de Dados (DPO)
         </h2>
         <p className="text-neutral-700 mb-4">

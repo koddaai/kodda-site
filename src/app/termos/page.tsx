@@ -8,8 +8,8 @@ export const metadata = {
 export default function TermosPage() {
   return (
     <LegalPageLayout title="Termos de Uso" lastUpdated="Janeiro de 2025">
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           1. Aceitação dos Termos
         </h2>
         <p className="text-neutral-700 mb-4">
@@ -24,8 +24,8 @@ export default function TermosPage() {
         </p>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           2. Descrição dos Serviços
         </h2>
         <p className="text-neutral-700 mb-4">
@@ -51,8 +51,8 @@ export default function TermosPage() {
         </p>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           3. Cadastro e Conta
         </h2>
         <p className="text-neutral-700 mb-4">
@@ -70,8 +70,8 @@ export default function TermosPage() {
         </p>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           4. Uso Aceitável
         </h2>
         <p className="text-neutral-700 mb-4">
@@ -89,8 +89,8 @@ export default function TermosPage() {
         </ul>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           5. Propriedade Intelectual
         </h2>
         <p className="text-neutral-700 mb-4">
@@ -106,8 +106,8 @@ export default function TermosPage() {
         </p>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           6. Conteúdo do Usuário
         </h2>
         <p className="text-neutral-700 mb-4">
@@ -121,8 +121,8 @@ export default function TermosPage() {
         </p>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           7. Pagamentos e Faturamento
         </h2>
         <p className="text-neutral-700 mb-4">
@@ -140,8 +140,8 @@ export default function TermosPage() {
         </p>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           8. Limitação de Responsabilidade
         </h2>
         <p className="text-neutral-700 mb-4">
@@ -160,8 +160,8 @@ export default function TermosPage() {
         </p>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           9. Indenização
         </h2>
         <p className="text-neutral-700">
@@ -172,8 +172,8 @@ export default function TermosPage() {
         </p>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           10. Rescisão
         </h2>
         <p className="text-neutral-700 mb-4">
@@ -189,8 +189,8 @@ export default function TermosPage() {
         </ul>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           11. Alterações nos Termos
         </h2>
         <p className="text-neutral-700">
@@ -200,8 +200,8 @@ export default function TermosPage() {
         </p>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">
           12. Disposições Gerais
         </h2>
         <ul className="list-disc pl-6 text-neutral-700 space-y-2">
@@ -229,7 +229,7 @@ export default function TermosPage() {
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold text-neutral-900 mb-4">13. Contato</h2>
+        <h2 className="text-2xl font-bold text-neutral-900 mb-4 mt-32">13. Contato</h2>
         <p className="text-neutral-700 mb-4">
           Para dúvidas sobre estes termos:
         </p>

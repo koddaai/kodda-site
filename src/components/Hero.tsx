@@ -71,10 +71,10 @@ export default function Hero() {
           >
             <Link
               href="#agents"
-              className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-black text-white font-semibold transition-all duration-300 hover:bg-black/90 hover:gap-4 hover:shadow-xl hover:shadow-black/20"
+              className="btn-primary"
             >
               {t("hero.cta")}
-              <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+              <ArrowRight className="w-4 h-4" />
             </Link>
           </motion.div>
         </div>

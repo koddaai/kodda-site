@@ -17,7 +17,7 @@ export default function LegalPageLayout({
   return (
     <>
       <Header />
-      <main className="pt-32 pb-20">
+      <main className="pb-32" style={{ paddingTop: "160px" }}>
         <div className="container-main">
           <div className="max-w-3xl mx-auto">
             {/* Header */}
@@ -30,8 +30,8 @@ export default function LegalPageLayout({
               </p>
             </div>
 
-            {/* Content */}
-            <div className="prose prose-neutral max-w-none">
+            {/* Content - espaçamento generoso entre seções */}
+            <div className="[&>section]:mb-24 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:mb-8 [&_h3]:text-xl [&_h3]:mt-10 [&_h3]:mb-6 [&_p]:text-base [&_p]:leading-relaxed [&_p]:mb-6 [&_ul]:my-6 [&_ul]:space-y-4 [&_li]:text-base [&_li]:leading-relaxed">
               {children}
             </div>
           </div>

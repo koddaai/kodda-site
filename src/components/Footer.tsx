@@ -26,7 +26,7 @@ export default function Footer() {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-white border-t border-neutral-200/60">
+    <footer className="bg-white" style={{ marginTop: "18px" }}>
       <div className="container-main py-16 md:py-20">
         {/* Grid principal */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
