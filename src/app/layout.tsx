@@ -14,9 +14,13 @@ export const metadata: Metadata = {
   title: "Kodda.ai | Agentes de IA que trabalham por você 24/7",
   description: "Agentes digitais, resultados reais. Para empresas que querem escalar sem aumentar custos.",
   keywords: ["IA", "agentes", "automação", "vendas", "atendimento", "transcrição", "SDR"],
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
   openGraph: {
     title: "Agentes digitais, resultados reais.",
-    description: "Para empresas que querem escalar sem aumentar custos.",
+    description: "Escale sua empresa sem escalar seus custos. Automação inteligente com agentes de IA.",
     url: "https://kodda.ai",
     siteName: "Kodda.ai",
     type: "website",
@@ -25,14 +29,14 @@ export const metadata: Metadata = {
         url: "/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Kodda.ai",
+        alt: "Kodda.ai - Agentes digitais, resultados reais",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Agentes digitais, resultados reais.",
-    description: "Para empresas que querem escalar sem aumentar custos.",
+    description: "Escale sua empresa sem escalar seus custos. Automação inteligente com agentes de IA.",
     images: ["/images/og-image.png"],
   },
 };
