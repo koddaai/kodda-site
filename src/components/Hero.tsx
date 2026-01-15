@@ -35,7 +35,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-flex items-center px-4 py-2 rounded-full bg-black/5 border border-black/10 text-xs font-semibold uppercase tracking-[0.2em] text-black/60 mb-8">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-black/50 mb-8">
               Automação Inteligente
             </span>
           </motion.div>
