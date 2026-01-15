@@ -127,7 +127,7 @@ export default function Metrics() {
   const { t } = useLanguage();
 
   return (
-    <section className="section-wrapper bg-white">
+    <section className="section-wrapper bg-white" style={{ paddingTop: "3rem", paddingBottom: "3rem" }}>
       <div className="container-main">
         {/* Header */}
         <div className="w-full flex flex-col items-center text-center mb-16">

@@ -31,11 +31,11 @@ export default function Agents() {
   ];
 
   return (
-    <section id="agents" className="section-padding bg-white">
+    <section id="agents" className="section-padding bg-white" style={{ paddingTop: "3rem", paddingBottom: "3rem" }}>
       <div className="container-main">
         {/* Section Header */}
-        <div className="text-center mb-12 md:mb-14">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-black [text-wrap:balance]">
+        <div className="text-center" style={{ marginBottom: "40px" }}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-black [text-wrap:balance]">
             {t("agents.title")}
           </h2>
           <p className="text-base md:text-lg text-black/50 [text-wrap:balance]">

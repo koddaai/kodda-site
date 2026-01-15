@@ -48,7 +48,7 @@ export default function Features() {
   const { t } = useLanguage();
 
   return (
-    <section className="section-wrapper bg-[#F5F0EB]">
+    <section className="section-wrapper bg-[#F5F0EB]" style={{ paddingTop: "3rem", paddingBottom: "3rem" }}>
       <div className="container-main">
         {/* Header */}
         <div className="w-full flex flex-col items-center text-center mb-16">

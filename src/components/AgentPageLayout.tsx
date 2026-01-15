@@ -116,7 +116,7 @@ export default function AgentPageLayout({
         </section>
 
         {/* Use Cases Section */}
-        <section className="section-padding bg-[#EBE7E0]">
+        <section className="section-padding bg-[#EBE7E0]" style={{ paddingTop: "3rem", paddingBottom: "3rem" }}>
           <div className="container-main">
             <div className="text-center mb-10 md:mb-12">
               <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-black [text-wrap:balance]">
@@ -145,7 +145,7 @@ export default function AgentPageLayout({
         </section>
 
         {/* How It Works Section */}
-        <section className="section-padding-sm bg-white">
+        <section className="section-padding-sm bg-white" style={{ paddingTop: "3rem", paddingBottom: "3rem" }}>
           <div className="container-main">
             <div className="text-center mb-8">
               <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-black [text-wrap:balance]">
@@ -182,7 +182,7 @@ export default function AgentPageLayout({
         </section>
 
         {/* Metrics Section */}
-        <section className="section-padding-sm bg-[#EBE7E0]">
+        <section className="section-padding-sm bg-[#EBE7E0]" style={{ paddingTop: "3rem", paddingBottom: "3rem" }}>
           <div className="container-main">
             <div className="text-center mb-8 md:mb-10">
               <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-black [text-wrap:balance]">
@@ -207,7 +207,7 @@ export default function AgentPageLayout({
         </section>
 
         {/* Features Section */}
-        <section className="section-padding-sm bg-white">
+        <section className="section-padding-sm bg-white" style={{ paddingTop: "3rem", paddingBottom: "3rem" }}>
           <div className="container-main">
             <div className="text-center mb-8 md:mb-10">
               <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-black [text-wrap:balance]">
@@ -236,7 +236,7 @@ export default function AgentPageLayout({
         </section>
 
         {/* CTA Section */}
-        <section id="contato" className="section-padding bg-[#EBE7E0]">
+        <section id="contato" className="section-padding bg-[#EBE7E0]" style={{ paddingTop: "3rem", paddingBottom: "3rem" }}>
           <div className="container-main">
             {/* CTA */}
             <div className="text-center">

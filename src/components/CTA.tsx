@@ -7,7 +7,7 @@ export default function CTA() {
   const { t } = useLanguage();
 
   return (
-    <section id="contato" className="section-padding bg-[#EBE7E0]">
+    <section id="contato" className="section-padding bg-[#EBE7E0]" style={{ paddingTop: "3rem", paddingBottom: "3rem" }}>
       <div className="container-main">
         <div className="text-center">
           <p className="text-xs text-black/50 mb-3 uppercase tracking-wider">
