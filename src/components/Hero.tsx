@@ -54,7 +54,7 @@ export default function Hero() {
 
           {/* Subheadline */}
           <motion.div
-            className="body-large max-w-xl" style={{ marginBottom: "30px" }}
+            className="body-large max-w-xl" style={{ marginBottom: "20px" }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
